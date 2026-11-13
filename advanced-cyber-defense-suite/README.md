@@ -8,6 +8,7 @@ A modular, defensive cybersecurity toolkit designed for Termux and Python 3. It 
 - Website security review: HTTPS/TLS certificate metadata and common HTTP security headers.
 - File integrity: SHA-256 manifest creation and verification.
 - Log triage: summarize common error/authentication-failure patterns from a log file.
+- Local secret hygiene: detect common accidental key/token patterns while redacting matched values.
 - JSON reports, clear errors, offline-friendly core, and a modular structure.
 
 ## Safety boundary
@@ -35,6 +36,7 @@ python tat.py webcheck https://example.com
 python tat.py hash-create ./my-folder --output integrity.json
 python tat.py hash-verify ./my-folder --manifest integrity.json
 python tat.py log-summary ./sample.log
+python tat.py secret-scan ./your-project --json secret-review.json
 ```
 
 ## Output

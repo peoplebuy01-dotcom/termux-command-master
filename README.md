@@ -1,5 +1,8 @@
 # Termux Command Master
 
+> **[🌐 View Sanjay's Portfolio](https://peoplebuy01-dotcom.github.io/termux-command-master/)** · [Portfolio source](portfolio/)
+
+
 **Termux सीखें: Zero से Advanced तक — आसान हिंदी और English में।**
 
 यह Android पर Termux सीखने वालों के लिए practical, beginner-friendly guide है। हर lesson में उद्देश्य, command examples, common errors, practice और safety notes दिए गए हैं।

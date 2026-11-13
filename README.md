@@ -2,103 +2,99 @@
 
 **Termux सीखें: Zero से Advanced तक — आसान हिंदी और English में।**
 
-यह repository Android पर Termux terminal सीखने वालों के लिए एक practical learning guide है। इसका लक्ष्य commands को केवल list करना नहीं, बल्कि उनका सही उपयोग, संभावित output, common errors और safety समझाना है।
+यह Android पर Termux सीखने वालों के लिए practical, beginner-friendly guide है। हर lesson में उद्देश्य, command examples, common errors, practice और safety notes दिए गए हैं।
 
-## किसके लिए?
+## शुरुआत कहाँ से करें?
 
-- बिल्कुल नए Termux users
-- Android पर Linux commands सीखने वाले विद्यार्थी
-- Shell scripting और automation की शुरुआत करने वाले लोग
-- अपने Android device पर सुरक्षित, वैध और उपयोगी projects बनाने वाले learners
+1. [Chapter 01 — Termux Installation](chapters/01-termux-installation.md)
+2. [Chapter 02 — Package Manager](chapters/02-package-management.md)
+3. [Chapter 03 — Files और Directories](chapters/03-files-and-directories.md)
+4. [Chapter 04 — File Operations](chapters/04-file-operations.md)
+5. [Chapter 05 — Reading और Editing Files](chapters/05-reading-editing-files.md)
 
-## Learning roadmap
+इसके बाद chapters को क्रम से पढ़ें। [पूरी Command Reference](COMMAND-REFERENCE.md) और [10 Practical Projects](PROJECTS.md) भी उपलब्ध हैं।
 
-इस repository का planned syllabus 35 chapters में बाँटा गया है:
+## सभी 35 Chapters
 
-1. Termux installation और first setup
-2. Package manager: pkg और apt
-3. Files और directories
-4. File create, copy, move और delete
-5. Reading और editing files
-6. Users, permissions और storage
-7. Process और system information
-8. Networking fundamentals
-9. SSH और remote access (अपने devices/accounts पर)
-10. Git और GitHub
-11. Bash basics
-12. Variables, conditions और loops
-13. Functions और scripts
-14. Python in Termux
-15. Useful Python packages
-16. Text processing
-17. Archives और backups
-18. Task automation
-19. Local web servers
-20. APIs की सुरक्षित basics
-21. Databases
-22. Android- और Termux-specific workflows
-23. Debugging और troubleshooting
-24. Performance और storage management
-25. Privacy और security hygiene
-26. Safe networking diagnostics
-27. Authorized security-learning lab concepts
-28. Developer tools
-29. Project structure और documentation
-30. Git collaboration
-31. Shell scripting projects
-32. Python projects
-33. Personal productivity tools
-34. Backup और file-management projects
-35. Final practical projects
+| # | विषय | अध्याय |
+|---|---|---|
+| 01 | Installation और first setup | [खोलें](chapters/01-termux-installation.md) |
+| 02 | pkg और apt | [खोलें](chapters/02-package-management.md) |
+| 03 | Files और directories | [खोलें](chapters/03-files-and-directories.md) |
+| 04 | Create, copy, move, delete | [खोलें](chapters/04-file-operations.md) |
+| 05 | Reading और editing | [खोलें](chapters/05-reading-editing-files.md) |
+| 06 | Storage और permissions | [खोलें](chapters/06-storage-permissions.md) |
+| 07 | Processes और system info | [खोलें](chapters/07-process-system-info.md) |
+| 08 | Networking basics | [खोलें](chapters/08-networking-basics.md) |
+| 09 | Git और GitHub | [खोलें](chapters/09-git-github.md) |
+| 10 | Bash first script | [खोलें](chapters/10-bash-first-script.md) |
+| 11 | Variables, conditions, loops | [खोलें](chapters/11-bash-variables-conditions-loops.md) |
+| 12 | Python in Termux | [खोलें](chapters/12-python-in-termux.md) |
+| 13 | Archives और backups | [खोलें](chapters/13-archives-backups.md) |
+| 14 | Local web server | [खोलें](chapters/14-local-web-server.md) |
+| 15 | Troubleshooting | [खोलें](chapters/15-troubleshooting.md) |
+| 16 | Text processing | [खोलें](chapters/16-text-processing.md) |
+| 17 | Automation basics | [खोलें](chapters/17-automation-and-scheduling.md) |
+| 18 | APIs और curl | [खोलें](chapters/18-apis-and-curl.md) |
+| 19 | Python files और JSON | [खोलें](chapters/19-python-files-json.md) |
+| 20 | Python functions और errors | [खोलें](chapters/20-python-functions-errors.md) |
+| 21 | SQLite database | [खोलें](chapters/21-databases-sqlite.md) |
+| 22 | Android Termux:API | [खोलें](chapters/22-android-termux-api.md) |
+| 23 | Debugging और logs | [खोलें](chapters/23-debugging-logs.md) |
+| 24 | Performance और storage | [खोलें](chapters/24-performance-storage.md) |
+| 25 | Privacy और security | [खोलें](chapters/25-privacy-security-hygiene.md) |
+| 26 | Safe network diagnostics | [खोलें](chapters/26-safe-network-diagnostics.md) |
+| 27 | Authorized security learning | [खोलें](chapters/27-authorized-security-learning.md) |
+| 28 | Developer tools | [खोलें](chapters/28-developer-tools.md) |
+| 29 | Project structure और docs | [खोलें](chapters/29-project-structure-docs.md) |
+| 30 | Git collaboration | [खोलें](chapters/30-git-collaboration.md) |
+| 31 | Shell project patterns | [खोलें](chapters/31-shell-projects.md) |
+| 32 | Python project patterns | [खोलें](chapters/32-python-projects.md) |
+| 33 | Productivity tools | [खोलें](chapters/33-productivity-tools.md) |
+| 34 | Backup और file management | [खोलें](chapters/34-backup-file-management.md) |
+| 35 | Capstone projects | [खोलें](chapters/35-capstone-projects.md) |
 
-> यह roadmap है; सभी chapters और projects अभी पूर्ण विस्तार में उपलब्ध हों, यह जरूरी नहीं। सामग्री चरणबद्ध तरीके से जोड़ी जाएगी।
+## Practical projects
 
-## Command lesson format
+हर project का code [projects/](projects/) folder में है:
 
-जहाँ लागू होगा, हर command lesson में ये बातें शामिल होंगी:
+1. [Notes Manager](projects/01-notes-manager/notes.sh)
+2. [Daily Learning Log](projects/02-daily-learning-log/log.sh)
+3. [Backup Creator](projects/03-backup-creator/backup.sh)
+4. [Disk Usage Report](projects/04-disk-report/report.sh)
+5. [File Organizer — safe dry-run](projects/05-file-organizer/organize.py)
+6. [Python Calculator](projects/06-python-calculator/calculator.py)
+7. [Quiz App](projects/07-quiz-app/quiz.py)
+8. [Local HTML Preview](projects/08-local-html-preview/index.html)
+9. [Git Notes Practice](projects/09-git-notes/README.md)
+10. [JSON Progress Tracker](projects/10-json-progress/progress.py)
 
-- Command और उसका उद्देश्य
-- Syntax
-- Example
-- Expected output या output का अर्थ
-- Real-world use
-- Common errors और fixes
-- Android/Termux compatibility notes
-- Safety warning, जहाँ जरूरी हो
+## Command Reference
 
-## Quick start
+[Starter Command Reference खोलें](COMMAND-REFERENCE.md)। यह अभी foundational list है; इसे आगे बढ़ाकर हर command के syntax, flags और compatibility notes जोड़े जाएँगे।
 
-Termux खोलकर package list update करें:
+## Termux Quick Start
 
 ```bash
-pkg update && pkg upgrade
+pkg update
+pkg upgrade
+pkg install git python nano
 ```
 
-मदद के लिए:
+कुछ commands के लिए अतिरिक्त package की जरूरत होती है। Android permissions और Termux version के कारण व्यवहार बदल सकता है।
 
-```bash
-pkg help
-man ls
-```
+## Safety first
 
-कुछ commands के लिए संबंधित package install करना पड़ सकता है। हर Linux command हर Android/Termux version पर समान रूप से उपलब्ध नहीं होती।
+- Commands को समझकर चलाएँ; random scripts को सीधे execute न करें।
+- `rm`, recursive delete और permission changes से पहले path जाँचें।
+- केवल अपने devices/accounts/systems या स्पष्ट अनुमति वाले environment पर testing करें।
+- Password, API key और access token public repository में न डालें।
+- Security content authorized, defensive learning तक सीमित है।
 
-## Safety rules
+## Contributing और License
 
-- Commands को समझकर चलाएँ; अनजान scripts को सीधे execute न करें।
-- `rm -rf`, root access और storage permissions का उपयोग बहुत सावधानी से करें।
-- केवल अपने devices, accounts और systems पर testing करें या स्पष्ट अनुमति लें।
-- Password, API key, access token और निजी जानकारी GitHub पर commit न करें।
-- किसी भी security lesson का उपयोग unauthorized access, नुकसान या privacy violation के लिए न करें।
+- [Contributing Guide](CONTRIBUTING.md)
+- [Security Policy](SECURITY.md)
+- [MIT License](LICENSE)
 
-## Contributing
-
-Typo fix, clearer explanation, tested example या नया beginner-friendly lesson योगदान करने के लिए [CONTRIBUTING.md](CONTRIBUTING.md) देखें। हर command को वास्तविक Termux environment में test करके version/limitations लिखें।
-
-## Project status
-
-यह learning project active development में है। पहले foundational guides, फिर detailed chapters और complete practical projects जोड़े जाएँगे। अधूरी सामग्री को complete बताने के बजाय उसकी स्थिति स्पष्ट रखी जाएगी।
-
-## License
-
-इस repository की सामग्री MIT License के अंतर्गत उपलब्ध है। विवरण के लिए [LICENSE](LICENSE) देखें।
+**Project status:** 35 chapter files और 10 beginner project files repository में जोड़े गए हैं। यह शुरुआती learning edition है; हर chapter को और विस्तार, screenshots और tested outputs के साथ बेहतर किया जा सकता है।

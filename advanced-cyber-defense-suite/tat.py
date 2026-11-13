@@ -10,6 +10,7 @@ from tatlib.integrity import create_manifest, verify_manifest
 from tatlib.network import run_network_checks
 from tatlib.webcheck import check_website
 from tatlib.logs import summarize_log
+from tatlib.secretscan import scan_directory
 
 
 def emit(data, json_path=None):
@@ -39,6 +40,9 @@ def main():
     p = sub.add_parser("log-summary", help="Summarize patterns in a local log file")
     p.add_argument("logfile")
     p.add_argument("--json", dest="json_path")
+    p = sub.add_parser("secret-scan", help="Find common accidental secret patterns; values are redacted")
+    p.add_argument("directory")
+    p.add_argument("--json", dest="json_path")
 
     args = parser.parse_args()
     try:
@@ -55,6 +59,8 @@ def main():
             emit(verify_manifest(args.directory, args.manifest))
         elif args.command == "log-summary":
             emit(summarize_log(args.logfile), args.json_path)
+        elif args.command == "secret-scan":
+            emit(scan_directory(args.directory), args.json_path)
     except (OSError, ValueError) as exc:
         print(f"[!] Error: {exc}", file=sys.stderr)
         return 2
